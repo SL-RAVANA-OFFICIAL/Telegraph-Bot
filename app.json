@@ -2,16 +2,16 @@
 
 "name": "Telegraph Bot",
     "description": "A bot that can upload photos and video to telegraph.",
-    "logo": "https://telegra.ph/file/06944637373c091c01e9f.jpg",
+    "logo": "https://telegra.ph/file/a749a1357b43187c3d202.jpg",
     "keywords": [
         "Telegraph",
         "Uploader",
         "Telegram Bot",
         "YouTech Bots"
     ],
-    "website": "https://youtech.live",
-    "repository": "https://github.com/sbatrow/TelegraphBot",
-    "success_url": "https://t.me/YouTech_Support",
+    "website": "https://youtube.com/channel/UC-Wdrj7Xeb1L9VNKUjKWRNQ",
+    "repository": "https://github.com/SL-RAVANA-OFFICIAL/Telegraph-Bot",
+    "success_url": "https://t.me/slravanaofficial",
     "env": {
         "TG_BOT_TOKEN": {
             "description": "Your Telegram Bot Token from @BotFather",
