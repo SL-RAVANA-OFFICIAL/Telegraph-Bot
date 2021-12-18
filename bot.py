@@ -16,17 +16,17 @@ async def start(client, message):
        await sbot.send_message(
                chat_id=message.chat.id,
                text="""<b>Hey There, I'm Telegraph  Bot
-I can upload photos or videos to telegraph. Made by 𝙎𝙞𝙩𝙝𝙪𝙢 𝘽𝙖𝙩𝙧𝙤𝙬 🇱🇰
+I can upload photos or videos to telegraph. Made by RAVANA Telegram Boy
 Hit help button to find out more about how to use me</b>""",   
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
                                             "Help", callback_data="help"),
                                         InlineKeyboardButton(
-                                            "Channel", url="https://t.me/YouTech_VPN_HUB")
+                                            "Channel", url="https://t.me/slravanaofficial")
                                     ],[
                                       InlineKeyboardButton(
-                                            "Support", url="https://t.me/YouTech_Support")
+                                            "Support", url="https://t.me/slravanaofficial")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -47,7 +47,7 @@ Just send a photo or video less than 5mb file size, I'll upload it to telegraph.
                                             "About", callback_data="about"),
                                   ],[
                                         InlineKeyboardButton(
-                                            "Github", url="https://github.com/sbatrow")
+                                            "Github", url="https://github.com/SL-RAVANA-OFFICIAL")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -58,10 +58,10 @@ async def about(client, message):
         await sbot.send_message(
                chat_id=message.chat.id,
                text="""<b>About Telegraph Bot!</b>
-<b>♞ Developer:</b> <a href="https://t.me/sbatrow"> 𝙎𝙞𝙩𝙝𝙪𝙢 𝘽𝙖𝙩𝙧𝙤𝙬 🇱🇰 </a>
-<b>♞ Support:</b> <a href="https://t.me/YouTech_Support">YouTech Support</a>
-<b>♞ Library:</b> <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
-<b>~ @YouTech_Support</b>""",
+<b>♞ Developer:</b> <a href="https://t.me/MR.RAVANA"> MR.RAVANA</a>
+<b>♞ Support:</b> <a href="https://t.me/slravanaofficial">RAVANA OFFICIAL</a>
+<b>♞ Program scl:</b> <a href="https://t.me/slravanaprogramingscl">Programan Scl</a>
+<b>~@MR_RAVANA_OFFICIAL</b>""",
      reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
@@ -82,14 +82,14 @@ async def telegraphphoto(client, message):
     except:
         await msg.edit_text("Photo size should be less than 5mb!") 
     else:
-        await msg.edit_text(f'**Uploaded To Telegraph!\n\n👉 https://telegra.ph{response[0]}\n\nJoin @YouTech_Support**',
+        await msg.edit_text(f'**Uploaded To Telegraph!\n\n👉 https://telegra.ph{response[0]}\n\nJoin @MR_RAVANA_OFFICIAL**',
             disable_web_page_preview=True,
         )
     finally:
         os.remove(download_location)
 @sbot.on_message(filters.video)
 async def telegraphvid(client, message):
-    msg = await message.reply_text("Uploading To Telegraph...")
+    msg = await message.reply_text("Uploading To Telegraph..."
     download_location = await client.download_media(
         message=message, file_name='root/SBtg')
     try:
@@ -97,7 +97,7 @@ async def telegraphvid(client, message):
     except:
         await msg.edit_text("Video size should be less than 5mb!") 
     else:
-        await msg.edit_text(f'**Uploaded To Telegraph!\n\n👉 https://telegra.ph{response[0]}\n\nJoin @YouTech_Support**',
+        await msg.edit_text(f'**Uploaded To Telegraph!\n\n👉 https://telegra.ph{response[0]}\n\nJoin @MR_RAVANA_OFFICIAL**',
             disable_web_page_preview=True,
         )
     finally:
@@ -112,7 +112,7 @@ async def telegraphgif(client, message):
     except:
         await msg.edit_text("Gif size should be less than 5mb!") 
     else:
-        await msg.edit_text(f'**Uploaded To Telegraph!\n\n👉 https://telegra.ph{response[0]}\n\nJoin @YouTech_Support**',
+        await msg.edit_text(f'**Uploaded To Telegraph!\n\n👉 https://telegra.ph{response[0]}\n\nJoin @MR_RAVANA_OFFICIAL**',
             disable_web_page_preview=True,
         )
     finally:
@@ -132,7 +132,7 @@ async def button(bot, update):
 print(
     """
 Bot Started!
-Join @YouTech_Support
+Join @MR_RAVANA_OFFICIAL
 """
 )
 sbot.run()
